@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/call_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="主叫"/>
+        <Button
+            android:id="@+id/answer_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="应答"/>
+        <Button
+            android:id="@+id/reject_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="拒接"/>
+        <Button
+            android:id="@+id/close_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="挂断"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/test_button0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="测试"/>
+        <Button
+            android:id="@+id/test_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="测试"/>
+        <Button
+            android:id="@+id/test_button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="测试"/>
+        <Button
+            android:id="@+id/test_button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="测试"/>
+    </LinearLayout>
+    
+    <!-- 在实际显示过程中，只显示图片和视频中的一种 -->
+	<!-- FrameLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center"
+		android:orientation="vertical"
+		android:background="@android:color/transparent">
+		<SurfaceView android:id="@+id/videorenderview"
+		    android:orientation="vertical"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:background="#00ff0000"
+			android:layout_width="360px"
+			android:layout_height="540px"
+			android:layout_marginBottom="2px"
+			android:layout_marginTop="2px"
+			android:visibility="visible">
+		</SurfaceView>
+		<SurfaceView android:id="@+id/videocaptureview"
+		    android:orientation="vertical"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:background="#00ff0000"
+			android:layout_width="360px"
+			android:layout_height="540px"
+			android:layout_marginBottom="2px"
+			android:layout_marginTop="2px"
+			android:visibility="visible">
+		</SurfaceView>
+	</FrameLayout -->
+	
+	<LinearLayout
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <SurfaceView android:id="@+id/videorenderview"
+		    android:orientation="vertical"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:background="#00ff0000"
+			android:layout_width="360px"
+			android:layout_height="540px"
+			android:layout_marginBottom="2px"
+			android:layout_marginTop="2px"
+			android:layout_marginLeft="1px"
+			android:layout_marginRight="1px"
+			android:visibility="visible">
+		</SurfaceView>
+		<SurfaceView android:id="@+id/videocaptureview"
+		    android:orientation="vertical"
+			android:layout_gravity="center"
+			android:gravity="center"
+			android:background="#00ff0000"
+			android:layout_width="360px"
+			android:layout_height="540px"
+			android:layout_marginBottom="2px"
+			android:layout_marginTop="2px"
+			android:layout_marginLeft="1px"
+			android:layout_marginRight="1px"
+			android:visibility="visible">
+		</SurfaceView>
+    </LinearLayout>
+</LinearLayout>
